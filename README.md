@@ -1,6 +1,6 @@
 This is a prototype of a third person controller made in godot 4.3, It is made as a template with help on resources.
 
------------------------------------------------------------------------------------------------------\
+-----------------------------------------------------------\
 
 Credit(s):
 
