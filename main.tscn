@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7ar5gkc7pwxx"]
+
+[ext_resource type="PackedScene" uid="uid://bk8ddhje6vd1w" path="res://player.tscn" id="2_jtl2y"]
+[ext_resource type="PackedScene" uid="uid://bv3m5nulq6c8e" path="res://map_thing.tscn" id="3_uabtt"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="3_ut84g"]
+
+[sub_resource type="Environment" id="Environment_06v20"]
+background_mode = 1
+background_color = Color(0.529412, 0.807843, 0.921569, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.5
+
+[node name="Main" type="Node3D"]
+transform = Transform3D(1.01528, 0, 0, 0, 1.01528, 0, 0, 0, 1.01528, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_06v20")
+
+[node name="player" parent="." instance=ExtResource("2_jtl2y")]
+transform = Transform3D(-4.30535e-08, 0, -0.984949, 0, 0.984949, 0, 0.984949, 0, -4.30535e-08, -8.39376, 0.078175, -2.57564)
+script = ExtResource("3_ut84g")
+
+[node name="pure concrete map pieces" parent="." instance=ExtResource("3_uabtt")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(0.98495, 0, 0, 0, 0.98495, 0, 0, 0, 0.98495, -5.9097, 80.7659, 67.9615)
+omni_range = 143.0

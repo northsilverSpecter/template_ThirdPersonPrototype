@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://e5dxxa77ohm4"]
+
+[ext_resource type="PackedScene" uid="uid://dcstow6ipupcq" path="res://assets/prototype player.glb" id="1_msn1f"]
+
+[node name="prototype player" instance=ExtResource("1_msn1f")]
