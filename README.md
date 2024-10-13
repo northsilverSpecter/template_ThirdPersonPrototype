@@ -1,6 +1,8 @@
-# Third Person Prototype
+# Third Person Prototype [Abandoned]
 
 This is a prototype of a third person controller made in godot 4.3, It is made as a template with help on resources.
+
+## This project is abandoned, there won't be much use of it as for now on moving to love2d
 
 -----------------------------------------------------------\
 
